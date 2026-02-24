@@ -14,33 +14,42 @@ pipeline {
             }
         }
 
+        stage('Debug Workspace') {
+            steps {
+                bat "echo Current Directory:"
+                bat "cd"
+                bat "echo Files in Workspace:"
+                bat "dir"
+            }
+        }
+
         stage('Restore') {
             steps {
-                bat 'dotnet restore %SOLUTION%'
+                bat "dotnet restore %SOLUTION%"
             }
         }
 
         stage('Build') {
             steps {
-                bat 'dotnet build %SOLUTION% --configuration %BUILD_CONFIGURATION% --no-restore'
+                bat "dotnet build %SOLUTION% --configuration %BUILD_CONFIGURATION% --no-restore"
             }
         }
 
         stage('Test') {
             steps {
-                bat 'dotnet test %SOLUTION% --no-build --verbosity normal'
+                bat "dotnet test %SOLUTION% --no-build --verbosity normal"
             }
         }
 
         stage('Publish Authorisation API') {
             steps {
-                bat 'dotnet publish Authorisation.Api/Authorisation.Api.csproj -c Release -o publish\\Authorisation'
+                bat "dotnet publish Authorisation.Api\\Authorisation.Api.csproj -c Release -o publish\\Authorisation"
             }
         }
 
         stage('Publish Weather API') {
             steps {
-                bat 'dotnet publish Weather.Api/Weather.Api.csproj -c Release -o publish\\Weather'
+                bat "dotnet publish Weather.Api\\Weather.Api.csproj -c Release -o publish\\Weather"
             }
         }
     }
