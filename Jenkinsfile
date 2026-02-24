@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SOLUTION = "WeatherSystemMicroServiceAndOnion.slnx"
+        SOLUTION = "WeatherSystemMicroServiceAndOnion\\WeatherSystemMicroServiceAndOnion.slnx"
         BUILD_CONFIGURATION = "Release"
     }
 
