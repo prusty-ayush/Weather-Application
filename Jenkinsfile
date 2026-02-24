@@ -69,10 +69,6 @@
 pipeline {
     agent any
 
-    tools {
-        dotnetsdk 'Default'
-    }
-
     stages {
 
         stage('Checkout') {
