@@ -1,0 +1,59 @@
+# =========================
+# Build Folders
+# =========================
+bin/
+obj/
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.slnLaunch.user
+
+# =========================
+# Rider / VS Code
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# EF Core / Database
+# =========================
+*.mdf
+*.ldf
+*.db
+
+# =========================
+# Secrets & Config
+# =========================
+appsettings.Development.json
+secrets.json
+
+# =========================
+# Node / Angular (if inside solution)
+# =========================
+node_modules/
+dist/
+.angular/
+coverage/
+
+# =========================
+# SonarQube
+# =========================
+.sonarqube/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db

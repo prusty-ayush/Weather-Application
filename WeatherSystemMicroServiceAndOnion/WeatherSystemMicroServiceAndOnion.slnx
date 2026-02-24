@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/AuthorisationService/">
+    <Project Path="Authorisation.Api/Authorisation.Api.csproj" />
+    <Project Path="Authorisation.Application/Authorisation.Application.csproj" />
+    <Project Path="Authorisation.Domain/Authorisation.Domain.csproj" />
+    <Project Path="Authorisation.Infrastructure/Authorisation.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/WeatherService/">
+    <Project Path="Weather.Api/Weather.Api.csproj" />
+    <Project Path="Weather.Application/Weather.Application.csproj" />
+    <Project Path="Weather.Domain/Weather.Domain.csproj" />
+    <Project Path="Weather.Infrastructure/Weather.Infrastructure.csproj" />
+  </Folder>
+</Solution>

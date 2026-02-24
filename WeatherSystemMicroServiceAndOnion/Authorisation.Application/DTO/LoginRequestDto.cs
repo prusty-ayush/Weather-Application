@@ -1,0 +1,16 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+///used for login request data transfer object
+namespace Authorisation.Application.DTO
+{
+    public class LoginRequestDto
+    {
+        [Required]
+        [MinLength(3)]
+        public string Username { get; set; } = string.Empty;
+
+        [Required]
+        [MinLength(6)]
+        public string Password { get; set; } = string.Empty;
+    }
+}
