@@ -43,13 +43,13 @@ pipeline {
 
         stage('Publish Authorisation API') {
             steps {
-                bat "dotnet publish Authorisation.Api\\Authorisation.Api.csproj -c Release -o publish\\Authorisation"
+                bat "dotnet publish WeatherSystemMicroServiceAndOnion\\Authorisation.Api\\Authorisation.Api.csproj -c Release -o publish\\Authorisation"
             }
         }
 
         stage('Publish Weather API') {
             steps {
-                bat "dotnet publish Weather.Api\\Weather.Api.csproj -c Release -o publish\\Weather"
+                bat "dotnet publish WeatherSystemMicroServiceAndOnion\\Weather.Api\\Weather.Api.csproj -c Release -o publish\\Weather"
             }
         }
     }
